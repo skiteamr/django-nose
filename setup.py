@@ -54,7 +54,7 @@ setup(
     packages=find_packages(exclude=["testapp", "testapp/*"]),
     include_package_data=True,
     zip_safe=False,
-    install_requires=["nose>=1.2.1"],
+    install_requires=["pynose>=1.5.1"],
     test_suite="testapp.runtests.runtests",
     # This blows up tox runs that install django-nose into a virtualenv,
     # because it causes Nose to import django_nose.runner before the Django
